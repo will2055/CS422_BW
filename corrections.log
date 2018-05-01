@@ -1,0 +1,43 @@
+proto_unit_main.cpp:31:12: error: expected ‘;’ at end of member declaration
+   int voc, carbon_dioxide
+            ^~~~~~~~~~~~~~
+proto_unit_main.cpp: In member function ‘int CarbonDioxide::openComm()’:
+proto_unit_main.cpp:33:37: error: ‘wiringPiI2CSetup’ was not declared in this scope
+    if((mics_fd=wiringPiI2CSetup(0x70)) < 0){
+                                     ^
+proto_unit_main.cpp:38:9: error: ‘read_res’ was not declared in this scope
+     if((read_res = read(fd, sensor_data, 8)) != 8){
+         ^~~~~~~~
+proto_unit_main.cpp:38:25: error: ‘fd’ was not declared in this scope
+     if((read_res = read(fd, sensor_data, 8)) != 8){
+                         ^~
+proto_unit_main.cpp:38:29: error: ‘sensor_data’ was not declared in this scope
+     if((read_res = read(fd, sensor_data, 8)) != 8){
+                             ^~~~~~~~~~~
+proto_unit_main.cpp: At global scope:
+proto_unit_main.cpp:179:1: error: expected ‘}’ at end of input
+ }
+ ^
+proto_unit_main.cpp: In member function ‘void Linx_GPS::openGPS_Serial()’:
+proto_unit_main.cpp:72:46: error: ‘serialOpen’ was not declared in this scope
+    if((device = serialOpen("/dev/ttyS0", baud)) < 0){
+                                              ^
+proto_unit_main.cpp:74:12: error: return-statement with a value, in function returning 'void' [-fpermissive]
+     return 1;
+            ^
+proto_unit_main.cpp:78:23: error: ‘serialFlush’ was not declared in this scope
+     serialFlush(device);
+                       ^
+proto_unit_main.cpp:82:29: error: ‘serialGetchar’ was not declared in this scope
+      if(serialGetchar(device) == '$'){
+                             ^
+proto_unit_main.cpp:87:29: error: expected ‘)’ before ‘{’ token
+        if(next_value == '\n'{
+                             ^
+proto_unit_main.cpp:94:7: error: expected primary-expression before ‘}’ token
+       }
+       ^
+proto_unit_main.cpp: At global scope:
+proto_unit_main.cpp:99:3: error: expected unqualified-id at end of input
+   }
+   ^

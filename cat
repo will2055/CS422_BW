@@ -1,0 +1,8 @@
+Setup: 0
+Clearing Buffer to begin transmission.
+Ready to begin communication to GPS Module.
+There is [501] characters for reading
+There is [1007] characters for reading
+6,*7D
+$GPRMC,220913.000,A,4024.1374,N,10441.8645,W,0.00,33.54,300318,,,D*46
+$GPVTG,33.54,T,,M,0.00,
